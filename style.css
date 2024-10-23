@@ -1,0 +1,233 @@
+body{
+    font-family: "Red Hat Text", sans-serif;
+    background-color: hsl(20, 50%, 98%);
+}
+button{
+    position: absolute;
+    padding: 7px 35px;
+    padding-right: 25px;
+    border-radius: 25px;
+    background-image: url("/assets/images/icon-add-to-cart.svg");
+    background-repeat: no-repeat;
+    background-position: 10px;
+    background-size: 18px;
+    font-size: 12px;
+    font-family: "Red Hat Text", sans-serif;
+    background-color: white;
+    font-weight: 500;
+    border-width: 1px;
+}
+.decrement{
+    width: 10px;
+    height: 10px;
+    border: 1.5px solid #ffffff;
+    padding: 3px;
+    border-radius: 100%;
+    margin-right: 30px;
+}
+.increment{
+    width: 10px;
+    height: 10px;
+    border: 1.5px solid #ffffff;
+    padding: 3px;
+    border-radius: 100%;
+    margin-left: 30px;
+}
+.adding{
+    position: absolute;
+    top: 270px;
+    left: 90px;
+    width: 120px;
+    height: 30px;
+    border-radius: 25px;
+    z-index: 1;
+    padding:0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(14, 86%, 42%);
+}
+.add{
+    top: 270px;
+    left: 90px;
+    z-index: 3;
+}
+.picture{
+    width: 300px;
+    border-radius: 10px;
+}
+h3{
+    font-size: 13px;
+    font-weight: 200;
+    color: grey;
+    padding-top: 25px;
+    margin: 0px;
+}
+h2{
+    font-size: 14px;
+    margin: 0px;
+    padding-top: 4px;
+}
+p{
+    margin: 0px;
+    font-size: 12px;
+    color: hsl(14, 86%, 42%);
+    padding-bottom: 20px;
+}
+.cards{
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    padding-left: 40px;
+    width: 64%;
+}
+#container{
+    width: 250px;
+    position: relative;
+}
+h1{
+    padding-left: 40px;
+}
+.main{
+    display: flex;
+}
+.checkout{
+    background-color: white;
+    width: 450px;
+    height:fit-content;
+    padding: 20px;
+}
+.center{
+    display: flex;
+    justify-content: center;
+}
+.cart{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+dialog::backdrop{
+    background: black;
+    opacity: 0.5;
+  }
+dialog{
+    width: 400px;
+    height: 500px;
+    border: 0px;
+    border-radius: 12px;
+}
+.start{
+    width: 400px;
+    height: 45px;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: 6px;
+    background-size: 16px;
+    padding: 0px;
+    border: 1.5px solid rgb(164, 164, 164);
+    position: absolute;
+    background-color:  hsl(14, 86%, 24%);
+    color: white;
+    font-weight: 400;
+    top: 400px;
+}
+dialog h2{
+    font-size: 20px;
+}
+.original{
+    position: relative;
+}
+.original button{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    top: 3px;
+    left: 380px;
+    background-image: url("/assets/images/icon-remove-item.svg");
+    background-repeat: no-repeat;
+    background-position: 6px;
+    background-size: 16px;
+    padding: 0px;
+    border: 1.5px solid rgb(164, 164, 164);
+}
+.original h2{
+    padding-top: 10px;
+}
+.original p{
+    color: black;
+}
+.confirm-order{
+    width: 400px;
+    height: 45px;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: 6px;
+    background-size: 16px;
+    padding: 0px;
+    margin-left: 20px;
+    border: 1.5px solid rgb(164, 164, 164);
+    position: static;
+    background-color:  hsl(14, 86%, 24%);
+    color: white;
+    font-weight: 400;
+    display:none;
+}
+.checkout h3{
+    padding-bottom: 20px;
+}
+.total{
+    font-size: 20px;
+    color: black;
+    display:none;
+}
+.carbon-neutral{
+    color:black;
+    font-size: 14px;
+    background-color: hsl(13, 31%, 94%);
+    text-align: center;
+    border-radius: 12px;
+    padding: 0px;
+    padding: 14px 0px;
+    margin-bottom: 10px;
+    display:none;
+}
+
+@media (max-width: 376px){
+    .cards{
+        display: flex;
+        flex-direction: column;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+    .checkout{
+        width: 300px;
+    }
+    .confirm-order{
+        width: 300px;
+        margin-left: 0px;
+    }
+    dialog{
+        width: 300px;
+        margin: 0px;
+        margin-top: 350px;
+        margin-left: 8px;
+    }
+    dialog img{
+        width: 20px;
+        height: 20px;
+    }
+    .start{
+        width: 200px;
+    }
+    p{
+        width: 250px;
+    }
+    h2{
+        width: 250px;
+    }
+    .original{
+        width: 300px;
+    }
+}
